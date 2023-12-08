@@ -1,0 +1,289 @@
+{
+    "questions": [
+        {
+            "id": 0,
+            "question": "Tu rentres de l’école et tu viens de finir ton goûter, tu as plusieurs choix concernant l’emballage de ton gâteau.",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu le jettes par terre dans la rue ",
+                    "status": 0,
+                    "img": "./img/dechet.jpg",
+                    "next": 1
+                },
+                {
+                    "id": "B",
+                    "response": "Tu le gardes dans ta poche ou dans ton sac le temps que tu trouves une poubelle pour le jeter.",
+                    "status": 1,
+                    "img": "./img/poubelle.png",
+                    "next": 1
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "question": "Une fois rentré à la maison tu prends des céréales pour le goûter, tu finis ta brique de lait, que fais-tu de la brique vide ?",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu jettes la brique dans le conteneur, pas besoin de faire le tri.",
+                    "status": 0,
+                    "img": "./img/tri.png",
+                    "next": 2
+                },
+                {
+                    "id": "B",
+                    "response": "Tu jettes la brique dans une poubelle adaptée pour le carton, par exemple une poubelle jaune.",
+                    "status": 1,
+                    "img": "./img/tri.png",
+                    "next": 2
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "C’est ton anniversaire tu as maintenant 15 ans, tu hésites entre deux activités à faire pour le fêter.",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Faire du kart",
+                    "status": 0,
+                    "img": "./img/karting.jpg",
+                    "next": 3
+                },
+                {
+                    "id": "B",
+                    "response": "Faire de l’accrobranche",
+                    "status": 1,
+                    "img": "./img/parc_accro.jpg",
+                    "next": 3
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "10 ans plus tard, tu as obtenu ton bac et tu as fait de grandes études. Tu veux une nouvelle voiture.",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu achètes une voiture d'occasion.",
+                    "status": 0,
+                    "img": "./img/voiture.jpg",
+                    "next": 4
+                },
+                {
+                    "id": "B",
+                    "response": "Tu achètes une voiture neuve électrique.",
+                    "status": 1,
+                    "img": "./img/electrique.jpg",
+                    "next": 4
+                },
+                {
+                    "id": "C",
+                    "response": "Tu achètes une voiture neuve diesel.",
+                    "status": 0,
+                    "img": "./img/voiture.jpg",
+                    "next": 4
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Tu ne sais pas comment aller à ton nouveau travail et tu commences à 8h00.",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu prends ta voiture. ",
+                    "status": 0,
+                    "img": "./img/voiture.jpg",
+                    "next": 5
+                },
+                {
+                    "id": "B",
+                    "response": " Tu prends un BlaBlaCar (covoiturage).",
+                    "status": 1,
+                    "img": "./img/blablacar.png",
+                    "next": 9
+                },
+                {
+                    "id": "B",
+                    "response": "Tu prends les transports en commun.",
+                    "status": 1,
+                    "img": "./img/transport_commun.jpg",
+                    "next": 9
+                },
+                {
+                    "id": "B",
+                    "response": "Tu prends ton vélo.",
+                    "status": 1,
+                    "img": "./img/velo.jpg",
+                    "next": 9
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "À cause de la voiture tu es resté dans les bouchons, c’est l’une des raisons de l’augmentation du gaz à effet de serre. Tu as maintenant 30 ans, tu as un nouveau travail est ton patron te demande de faire une démarche écologique et tu as un budget.",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu trouves une association et tu donnes tout le budget.",
+                    "status": 1,
+                    "img": "./img/associations.jpg",
+                    "next": 7
+                },
+                {
+                    "id": "B",
+                    "response": "Tu utilises le budget pour améliorer ton plan de travail.",
+                    "status": 0,
+                    "img": "./img/bureau.jpg",
+                    "next": 6
+                },
+                {
+                    "id": "C",
+                    "response": "Tu l’utilises pour sensibiliser l’équipe sur les petits gestes à faire pour l’environnement.",
+                    "status": 1,
+                    "img": "./img/bureau.jpg",
+                    "next": 7
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Selon toi, après tout tes choix",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu dois te remettre en question",
+                    "status": 1,
+                    "img": "./img/question.png",
+                    "fin": 1
+                },
+                {
+                    "id": "B",
+                    "response": "Il est déjà trop tard, et à toi seul tu n’as pas d’impact",
+                    "status": 0,
+                    "img": "./img/question.png",
+                    "fin": 0
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Une association luttant contre le réchauffement climatique te propose de faire partie de leur association.",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu acceptes de rejoindre l'association.",
+                    "status": 1,
+                    "img": "./img/confirmation.png",
+                    "next": 8
+                },
+                {
+                    "id": "B",
+                    "response": "Tu rejettes l'invitation.",
+                    "status": 0,
+                    "img": "./img/negative.png",
+                    "next": 6
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Tu as 60 ans, et tu n'abordes pas de démarche écologique chez toi.",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu essayes de changer tes habitudes.",
+                    "status": 1,
+                    "img": "./img/question.png",
+                    "next": 11
+                },
+                {
+                    "id": "B",
+                    "response": "Tu ne changes rien à tes habitudes.",
+                    "status": 0,
+                    "img": "./img/question.png",
+                    "next": 6
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Tu souhaites déménager.",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu achètes un appartement proche de ton travail.",
+                    "status": 1,
+                    "img": "./img/appartement.png",
+                    "next": 10
+                },
+                {
+                    "id": "B",
+                    "response": "Tu achètes un appartement loin de ton travail.",
+                    "status": 0,
+                    "img": "./img/appartement.png",
+                    "next": 7
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "Durant ta douche tu as une envie pressante.",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu sors de la douche pour faire pipi ",
+                    "status": 0,
+                    "img": "./img/douche.png",
+                    "next": 8
+                },
+                {
+                    "id": "B",
+                    "response": "Tu fais pipi sous la douche.",
+                    "status": 1,
+                    "img": "./img/douche.png",
+                    "next": 11
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "question": "Tu as des déchets,",
+            "responses": [
+                {
+                    "id": "A",
+                    "response": "Tu tries et tu recycles.",
+                    "status": 1,
+                    "img": "./img/tri.png",
+                    "fin": 2
+                },
+                {
+                    "id": "B",
+                    "response": "Tu ne tries pas.",
+                    "status": 0,
+                    "img": "./img/poubelle.png",
+                    "fin": 1
+                }
+            ]
+        }
+    ],
+    "fin": [
+        {
+            "id": 0,
+            "explication": "Tes choix n'ont pas fait en sorte de stopper le réchauffement climatique. Mais il n'est jamais trop tard chaque geste compte, un effort collectif est nécessaire pour stopper le réchauffement climatique !",
+            "img": "./img/mauvaise_fin.png"
+        },
+        {
+            "id": 1,
+            "explication": "Tu n'as malheureusement pas fais assez d'efforts, il y à moins de chance d'arrêter le réchauffement climatique.",
+            "img": "./img/moyenne_fin.jfif"
+        },
+        {
+            "id": 2,
+            "explication": "Bravo, tes actions et celles de tout le monde ont permis d'arrêter le réchauffement climatique !!!",
+            "img": "./img/belle_fin.jpg"
+        }
+    ]
+}

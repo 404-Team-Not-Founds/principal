@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,10 +15,24 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="personnage">
+      <img src="./img/perso.jpeg" alt="Personnage" class="image-personnage">
+    </div>
+    <div class="image-principale">
+      
+    </div>
+    <div class="barre-container">
+      <div class="barre-remplie"></div>
+    </div>
+  </div>
+  <div class="questionnaire"></div>
 
-  <div class="add-button">
+
+  <div class="add-button" >
     <div class="top">
-      <span>L'application Beers, faites pour tous les alcooliques directement sur votre smartphone ou ordinateur !</span>
+      <span>Pensez à votre avenir, et celui de vos enfants ! Téléchargez l'application contre le réchauffement
+        climatique</span>
     </div>
     <div class="bottom">
       <div class="whitespace"></div>
@@ -30,10 +42,7 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="workers.js"></script>
+  <!-- <script src="workers.js"></script>
   <script>
 
     if ('serviceWorker' in navigator) {
@@ -83,7 +92,8 @@
 
       });
     });
-  </script>
+  </script> -->
+  <script type="module" src="./script.js"></script>
 </body>
 
 </html>
