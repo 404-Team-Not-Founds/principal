@@ -85,7 +85,6 @@ html {
     cursor: pointer;
 }
 
-
 .add-button {
     display: flex;
     position: fixed;
@@ -109,7 +108,6 @@ html {
     height: 100%;
     align-items: center;
 }
-
 
 .top span {
     text-align: center;
@@ -144,48 +142,88 @@ html {
     transition: all 0.5s;
 }
 
+.logo-container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px; /* Ajustez selon vos besoins */
+}
 
+.logo {
+    max-width: 100px; /* Ajustez selon la taille souhaitée */
+    height: auto;
+}
 
+/* Styles pour mobile */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
 
-    .personnage,
+    .personnage {
+        display: none;
+        /* Masquer le personnage sur mobile */
+    }
+    
+    .logo {
+        max-width: 60px; /* Taille plus petite pour les écrans mobiles */
+    }
+
     .barre-container {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
+        height: 100px;
+        width: 90vw;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        /* Barre horizontale sur mobile */
     }
 
     .image-personnage {
         width: 50px;
     }
 
-    .barre-container {
-        height: 100px;
-    }
-
     .image-centrale {
         max-width: 95%;
     }
+
 
     .reponses {
         flex-direction: column;
     }
 
+    
+
+    .whitespace {
+        width: 0%;
+    }
+
+    .top span {
+        font-size: 1em;
+    }
+
+    .reponse {
+        background-color: #d3d3f9;
+        border: none;
+        border-radius: 10px;
+        margin: 0 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+    
+
+    .top span {
+        font-size: 0.5em;
+    }
 
 
     .add-button button {
         border-radius: 20%;
         border: #aaa solid 2px;
         color: #aaa;
-        font-size: 1em;
+        font-size: 0.5em;
         font-weight: 500;
         background-color: rgba(0, 0, 0, 0);
         width: fit-content;
         align-self: center;
     }
-    
-
 }
