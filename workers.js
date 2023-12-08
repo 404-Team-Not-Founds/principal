@@ -2,15 +2,28 @@ const cacheName = 'my-pwa-cache-v1';
 
 // Liste des ressources à mettre en cache
 const resourcesToCache = [
-    // '/',
-    // 'index.html',
-    // 'style.css',
-    // "android-chrome-192x192.png",
-    // "android-chrome-512x512.png",
-    // "apple-touch-icon.png",
-    // "favicon-16x16.png",
-    // "favicon-32x32.png",
-    // "favicon.ico"
+    '/img/appartement.png',
+    '/img/associations.jpg',
+    '/img/belle_fin.jpg',
+    '/img/blablacar.png',
+    '/img/bureau.jpg',
+    '/img/confirmation.png',
+    '/img/dechet.jpg',
+    '/img/douche.png',
+    '/img/electrique.jpg',
+    '/img/karting.jpg',
+    '/img/mauvaise_fin.jpg',
+    '/img/moyenne_fin.png',
+    '/img/negative.png',
+    '/img/parc_accro.jpg',
+    '/img/perso.jpeg',
+    '/img/poubelle.png',
+    '/img/question.png',
+    '/img/recyclage.png',
+    '/img/transport_commun.jpg',
+    '/img/tri.png',
+    '/img/velo.jpg',
+    '/img/voiture.jpg'
 ];
 
 self.addEventListener('install', event => {
