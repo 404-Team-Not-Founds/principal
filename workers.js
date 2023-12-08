@@ -12,7 +12,7 @@ const resourcesToCache = [
     '/img/douche.png',
     '/img/electrique.jpg',
     '/img/karting.jpg',
-    '/img/mauvaise_fin.jpg',
+    '/img/mauvaise_fin.png',
     '/img/moyenne_fin.png',
     '/img/negative.png',
     '/img/parc_accro.jpg',
@@ -23,7 +23,7 @@ const resourcesToCache = [
     '/img/transport_commun.jpg',
     '/img/tri.png',
     '/img/velo.jpg',
-    '/img/voiture.jpg'
+    '/img/voiture.jpg',
 ];
 
 self.addEventListener('install', event => {
