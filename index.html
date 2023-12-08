@@ -48,11 +48,11 @@
     </div>
   </div>
 
-  <script src="/workers.js"></script>
+  <script src="principal/workers.js"></script>
   <script>
 
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/workers.js')
+      navigator.serviceWorker.register('principal/workers.js')
         .then(registration => {
           console.log('Service Worker enregistré avec succès.', registration);
         })
